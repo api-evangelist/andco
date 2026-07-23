@@ -1,7 +1,29 @@
 aid: andco
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/andco.png
 name: Andco
-description: Andco is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Andco is a Y Combinator (Spring 2026) startup building an AI-agent platform
+  that automates the pre-litigation case workup process for personal injury law
+  firms. Its agents retrieve and synthesize case documents across fax, phone,
+  email, mail, web portal, and SMS channels, including police and accident
+  reports, insurance coverage verification, medical records, and medical bills,
+  then draft demand letters and calculate damages. Andco covers auto accident,
+  premises liability, medical malpractice, workplace injury, and mass tort
+  practice areas, offering same-day go-live and a free trial on the first case.
+  This profile was surfaced from Andco's Y Combinator portfolio listing and
+  enriched by the API Evangelist pipeline; Andco publishes no public API,
+  developer portal, or machine-readable specification at this time.
 url: https://raw.githubusercontent.com/api-evangelist/andco/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +36,29 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Legal Tech
+- Personal Injury
+- Legal
+- AI Agents
+- Document Automation
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/andco-domain-security.yml
+- type: Website
+  url: https://www.useandco.com
+- type: Login
+  url: https://app.useandco.com
+- type: LLMsTxt
+  url: llms/andco-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
